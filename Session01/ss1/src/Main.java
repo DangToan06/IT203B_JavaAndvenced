@@ -7,7 +7,7 @@ void main() {
 //    Bai1.chiaNhom();
 
 //    Bai3,5
-//    User user = new User(-1);
+    User user = new User(-1);
 
 //    Bai4
 //    try {
