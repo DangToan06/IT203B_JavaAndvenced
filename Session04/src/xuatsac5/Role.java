@@ -1,0 +1,5 @@
+package xuatsac5;
+
+public enum Role {
+    ADMIN, MODERATOR, USER
+}
