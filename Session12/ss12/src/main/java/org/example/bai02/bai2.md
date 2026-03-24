@@ -1,0 +1,4 @@
+###  Tại sao các phương thức setDouble(), setInt() của PreparedStatement lại giúp lập trình viên không cần lo lắng về định dạng dấu chấm hay dấu phẩy của hệ điều hành?
+
+- Khi dùng nối chuỗi, sẽ phải biến số thành chuỗi. VD: số 10.5 có thể biến thành *"10.5"* (Kiểu Mỹ) hoặc *"10,5"* kiểu Pháp/Việt tùy vào local của máy điều này sẽ gây lỗi khi sql chỉ nhận dấu "." .
+- Ngược lại, setDouble() hay setInt() truyền dữ liệu ở dạng nguyên thủy (primitive types) hoặc định dạng chuẩn của Driver JDBC. Nó không quan tâm máy tính của bạn đang hiển thị số đó như thế nào cho người dùng xem; nó chỉ quan tâm đến giá trị thực tế của con số đó trong bộ nhớ.
